@@ -1,0 +1,43 @@
+1. a) hello world
+b) ls -alrt
+c) passwd
+d) date
+e) who
+f) pwd
+g) history
+h) netstat
+i) ps -a
+j)grep
+k)ps | grep pager
+
+2. mkdir exercises
+  cd exercises
+  
+3. touch file1.txt file2.txt file3.txt
+
+4. vi file1.txt
+cp file1.txt ~/exercises/files
+
+5.cp -r exercises/*.* exercises/files
+
+9. chmod 744 files
+
+10. useradd test
+
+12. mkdir -p ~/john/work/scripts/bash
+
+13. files will not be deleted as it is not empty
+
+14. john can read only
+
+15. alias cls="clear"
+
+16.tar cvf exercises.tar exercises.*
+
+17.tar cvf new.jar q1.class q2.class
+find q2.class new.jar
+
+18.grep -l q2.class *.jar
+
+20. set <variable name> is used to add variable
+unset <variable name> is used to remove the variable
