@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="jquery.js">
+</script>
+</head> 
+<body>
+<div class="on" style="background-color:green"/> 
+<input type="button" id="button1" value="click" top=/>
+<script>
+$(document).ready(function(){
+$('#button1').click(function(){
+if($('div').attr('class')=="on")
+{
+ $('div').removeClass('on')
+ $('div').addClass('off')
+ $('div').css('background','red')
+}
+else if($('div').attr('class')=="off")
+{
+ $('div').removeClass('off')
+ $('div').addClass('on')
+ $('div').css("background","green")
+}
+})
+})
+</script>
+</body>
+</html>
