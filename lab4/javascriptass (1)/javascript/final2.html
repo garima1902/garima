@@ -1,0 +1,33 @@
+<html>
+<body>
+<p id="demo">hey!!</p>
+<button onclick="find()">click here</button>
+<script language="javascript">
+function find()
+{
+var r = prompt("enter the string", "0");
+n= r.length;
+ 
+   end = n - 1;
+   middle = n/2;
+flag=0;
+ 
+   for (begin = 0; begin < middle; begin++)
+   {
+      if (r[begin] != r[end])
+      {
+         document.getElementById("demo").innerHTML =
+        "The entered string is not a palindrome!";
+	flag=1;
+         break;
+      }
+      end--;
+   }
+   if (flag==0)
+{
+     document.getElementById("demo").innerHTML = "The entered string is a palindrome!";
+}
+}
+</script>
+</body>
+</html>

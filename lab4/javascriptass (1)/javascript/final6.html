@@ -1,0 +1,61 @@
+
+<html>
+<head><title>working with forms</title>
+<script>
+function validateForm() {
+flag=0;
+    var x = document.forms["myForm"]["firstname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        flag = 1;
+}
+
+var y = document.forms["myForm"]["age"].value;
+if (y == null || y < "18")
+{
+alert("age must be greater than or equal to 18");
+        flag = 1;
+}
+
+if(flag == 1)
+return false;
+else 
+return true;
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" 
+onsubmit="return validateForm()" method="post">
+Your name:<br>
+<input type="text" name="firstname">
+<br>
+Your age:<br>
+<input type="text" name="age">
+<br>
+Your gender:<br>
+<input type="radio" name="sex">Male
+<input type="radio" name="sex">Female
+<br>
+Your Qualification:<br>
+<input type="checkbox" name="Graduate">
+Graduate
+<br>
+<input type="checkbox" name="Post Graduate">
+Post Graduate
+<br>
+<input type="checkbox" name="Diploma">
+Diploma
+<br>
+Comments:
+<br>
+<textarea name="message" rows="10" cols="30">
+Please write your comment here..!!
+</textarea>
+<br><br>
+
+<input type="submit" name="submit">
+</form>
+</body>
+</html>

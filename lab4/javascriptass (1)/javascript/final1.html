@@ -1,0 +1,20 @@
+<html>
+<body>
+<p id=demo>hey</p>
+<button onclick="calc()">try</button>
+<script language="javascript">
+function calc()
+{
+var p = prompt("enter the amount", "0");
+si=p;
+var r = prompt("enter the interest rate", "0");
+si=si*r;
+var t = prompt("enter the time", "0");
+si=(si*t)/100;
+document.getElementById("demo").innerHTML =
+        "The simple interest is" + si + "!";
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>intervals</title>
+
+<script language="javascript">
+
+function updatetime()
+{
+var obj=new Date();
+    var h=obj.getHours();
+    var m=obj.getMinutes();
+    var s=obj.getSeconds();
+
+
+document.write("<br><br><br>"+h+":"+m+":"+s+"<br>");
+}
+function start()
+{
+var ref=setInterval("updatetime()", 1000);
+}
+function stop()
+{
+clearInterval(ref);
+}
+</script>
+</head>
+<body>
+
+<input type="button" name="b1" value="start displaying time!!" onClick='start()'>
+
+<input type="button" name="b2" value="stop displaying time!!" onClick='stop()'>
+</body>
+</html>
