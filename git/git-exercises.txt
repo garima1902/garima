@@ -1,0 +1,35 @@
+- Initialize a Git Repository
+git init
+
+- Add files to the repository
+git add [file_name]
+
+- Unstage 1 file
+git reset [file_name]
+
+- Commit the files
+git commit -m [message]
+
+- Add a remote
+git remote add origin [repo_url]
+
+- Undo changes to a particular file
+git commit --amend
+
+- Push changes to Github
+git push origin master
+
+- Clone the repository
+git clone [repo_url]
+
+- Add changes to one of the copies and pull the changes in the other.
+git pull origin master
+
+- Create a new branch. Diverge them with commits
+git branch newbranch
+
+- Try merging and resolve merge conflicts
+git merge newbranch
+
+- Stash the changes and pop them
+git stash
